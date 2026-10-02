@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Cross-Domain Generalization for Skin Lesion Classification with Soft-Routed Residual Adaptation"
+type: software
+authors:
+  - family-names: Sadat
+    given-names: Said Bahar
+    orcid: "https://orcid.org/0009-0002-0961-882X"
+  - family-names: Chen
+    given-names: Kesong
+repository-code: "https://github.com/saidbaharsadat/cross-domain-skin-lesion-generalization"
+url: "https://github.com/saidbaharsadat/cross-domain-skin-lesion-generalization"
+abstract: "Reproducibility repository for leakage-aware cross-domain skin lesion classification with a frozen EfficientNet-B0/B3 multidomain ensemble and soft-routed residual adaptation."
+keywords:
+  - skin lesion classification
+  - domain generalization
+  - cross-domain learning
+  - dermoscopy
+  - residual adaptation
+  - external evaluation
