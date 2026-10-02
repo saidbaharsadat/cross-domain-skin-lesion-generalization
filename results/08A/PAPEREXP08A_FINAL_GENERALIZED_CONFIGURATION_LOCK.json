@@ -1,0 +1,71 @@
+{
+  "lock_id": "PAPEREXP08A_FINAL_GENERALIZED_CONFIGURATION_LOCK_2026-08-30_v1",
+  "experiment": "PAPER-EXP-08A",
+  "configuration_name": "06D frozen-backbone soft-routed residual ensemble with global residual gain 1.05",
+  "status": "FINAL_VALIDATION_SELECTED_GENERALIZED_CONFIGURATION",
+  "locked_at_code_version": "PAPEREXP08A_06D_GAIN_1P05_FINAL_CONFIGURATION_LOCK_2026-08-30_v2_KAGGLE_EXTRACTED_RECOVERY_SUPPORT",
+  "model_architecture": "IDENTICAL_TO_PAPER_EXP_06D",
+  "training_change_from_06D": "NONE",
+  "weights_change_from_06D": "NONE",
+  "only_inference_change": {
+    "global_residual_gain": 1.05
+  },
+  "inference_definition": {
+    "class_order": ["MEL", "NV", "BCC", "AKIEC", "BKL"],
+    "base_system": "PAPER-EXP-06A fixed six-checkpoint B0/B3 ensemble as used by PAPER-EXP-06D",
+    "adapter_system": "mean residual from the three selected PAPER-EXP-06D epoch-3 soft-routed residual adapters",
+    "formula": "P_final = softmax(log(P_06A) + 1.05 * R_06D), where R_06D is the centered log-probability residual reconstructed/implemented by the unchanged 06D adapter system",
+    "residual_gain": 1.05,
+    "tta": "unchanged from PAPER-EXP-06D (fixed TTA7)",
+    "B0_B3_fusion": "unchanged from PAPER-EXP-06D (fixed 0.5/0.5 family fusion)",
+    "adapter_seed_aggregation": "unchanged from PAPER-EXP-06D (mean of three selected adapter seeds)",
+    "thresholds": "argmax; no threshold tuning",
+    "calibration": "none"
+  },
+  "source_archives": {
+    "PAPEREXP06A_recovery_sha256": "f426562e03e694706052ca324434d301c229be8db3338eb209f3b93d680622db",
+    "PAPEREXP06D_recovery_sha256": "debe5c7068f421bae3afdd5412cc7b718a8128a2a3b1848f2445ed3c13bd809c"
+  },
+  "locked_06A_checkpoint_sha256": {
+    "checkpoints/b0_seed_20260820/best.pth": "51eb6d967c6805ad622863c9b2d586954a119c2330a6608e9a73c95b808e6932",
+    "checkpoints/b0_seed_20260821/best.pth": "a32e5e6679af64db64d7154d59dcf62d7f8ef230b3f029d0c610168ea49998c3",
+    "checkpoints/b0_seed_20260822/best.pth": "610a79ffda7719598d6b26009dfe1c5534a4c7951179f9b018a5381e04bf7f6d",
+    "checkpoints/b3_seed_20260820/best.pth": "a5d882e39255417a7171a5403b4298430d8ac0c3af7e31dd589538c73e950b19",
+    "checkpoints/b3_seed_20260821/best.pth": "8827e01a59205723c5fefad9449740129072edb07bd4870c1361d904e512bbdb",
+    "checkpoints/b3_seed_20260822/best.pth": "33b60778f13785ca7748d85a32421bb53a9044f23ed716aafb1c625238463e98"
+  },
+  "locked_06D_adapter_checkpoint_sha256": {
+    "checkpoints/adapter_seed_20260829/selected.pth": "d96365b453a9306955f0025930629710d49e30a1eaf1950ca1784371afd6c667",
+    "checkpoints/adapter_seed_20260830/selected.pth": "93ee73ffe2b6b4f65aa2ba61881b18646cf8a874324d3a60018e89c0ac77014d",
+    "checkpoints/adapter_seed_20260831/selected.pth": "03b443c8e0b9bf9dd886397fbc45ae49ad0b18556919edb58f90a17ca0949e83"
+  },
+  "source_validation_material_sha256": {
+    "validation_predictions/BASELINE_06A_fixed_50B0_50B3_tta7_validation.csv": "60ca81603aaf03486e776f80def3ca086ba118ea9a38838b7b071b1e06ec3a20",
+    "validation_predictions/PAPEREXP06D_soft_routed_residual_tta7_validation.csv": "920bc6748af41943a6d8026ab569db4e6aaa8bc5f8cd5b3cffcde2ba6027e26a",
+    "PAPEREXP06D_FINAL_DECISION.json": "8b8722aa2aeff0c16d7671f7bdf2207e1f17087931aa50a71bf2d70544870c23",
+    "paper_exp06d_protocol.json": "07f167405093bb78379a352f0c742227c38b093f4b891fb23c1832a9d1b1777d"
+  },
+  "selected_common_adapter_epoch": 3,
+  "validation_evidence": {
+    "per_domain": {
+      "ISIC2018_HAM10000": {"n": 1020, "accuracy": 0.8558823529411764, "macro_f1": 0.75776524222606, "balanced_accuracy": 0.7436588107975358, "melanoma_recall": 0.5729166666666666, "macro_auc": 0.9606153051514916},
+      "BCN20000": {"n": 2387, "accuracy": 0.728110599078341, "macro_f1": 0.664624276102102, "balanced_accuracy": 0.6552017399367872, "melanoma_recall": 0.6462809917355372, "macro_auc": 0.9099041864314504},
+      "Derm7pt": {"n": 71, "accuracy": 0.8591549295774648, "macro_f1": 0.867739898989899, "balanced_accuracy": 0.8677631578947369, "melanoma_recall": 0.75, "macro_auc": 0.96006961590804},
+      "PAD_UFES_20": {"n": 417, "accuracy": 0.8225419664268585, "macro_f1": 0.8026929865092767, "balanced_accuracy": 0.8037010980489241, "melanoma_recall": 0.8, "macro_auc": 0.9659883604532556}
+    },
+    "equal_domain_accuracy": 0.8164224620059601,
+    "equal_domain_macro_f1": 0.7732056009568344,
+    "equal_domain_balanced_accuracy": 0.7675812016694961,
+    "equal_domain_melanoma_recall": 0.692299414600551,
+    "equal_domain_macro_auc": 0.9491443669860594
+  },
+  "validation_gate_passed": true,
+  "scientific_claim_boundary": {
+    "validation_selected_after_prior_frozen_evaluation": true,
+    "previously_opened_frozen_partitions_are_not_independent_evidence_for_this_08A_configuration": true,
+    "do_not_tune_on_or_reselect_using_previously_opened_frozen_test_results": true,
+    "new_untouched_cohort_required_for_a_new_independent_final_test_claim": true,
+    "DERM12345_was_not_used_for_08A_selection": true
+  },
+  "future_change_policy": "If this configuration is treated as the final generalized configuration, do not change gain, checkpoints, router, experts, TTA, fusion, thresholds, or calibration before a new untouched evaluation."
+}
