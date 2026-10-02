@@ -1,12 +1,15 @@
 # Figures
 
-This directory is reserved for selected publication-quality figures and the graphical abstract.
+The final manuscript figure files and graphical abstract have been audited as publication artifacts.
 
-The manuscript currently uses:
+Planned public figure set:
 
-1. soft-routed residual adaptation architecture;
-2. experimental and evaluation workflow;
-3. per-domain 08A development-validation performance;
-4. post-lock DERM12345 evaluation and router behavior.
+1. `Figure01` - soft-routed residual adaptation architecture;
+2. `Figure02` - complete experimental/evaluation workflow;
+3. `Figure03` - per-domain 08A development-validation performance;
+4. `Figure04` - post-lock DERM12345 evaluation and router behavior;
+5. graphical abstract.
 
-Only final, publication-safe figure files should be added here.
+The binary PDF files are intentionally not represented by placeholder text files. They will be added through a binary-capable GitHub upload path rather than reconstructed or altered.
+
+The JBHI-generated reviewer/submission PDF and signed consent form are **not** publication artifacts for this repository and will not be uploaded.
