@@ -1,0 +1,8 @@
+stage,setting,accuracy,macro_f1,balanced_accuracy,mel_recall,macro_auc,notes
+01C,lesion-safe native 7-class source test,0.8682,0.7333,0.7076,0.7524,0.9756,"971 images / 749 lesion groups"
+04A,conventional image-level 7-class comparison,0.9135,0.8676,0.8647,0.8056,0.9877,"402/971 test images shared lesion identity with train or validation"
+05A,equal-domain source-only zero-shot mean,0.6190,0.4413,0.4565,0.3640,0.8317,"Frozen 7-class source model; no target adaptation"
+06A,5-class multidomain generalized baseline,0.7988,0.7538,0.7662,0.6949,0.9475,"Equal-domain development validation"
+06D,5-class frozen-backbone soft-routed residual alpha=1.0,0.8158,0.7722,0.7672,0.6919,0.9491,"Equal-domain development validation"
+08A,final locked 5-class configuration alpha=1.05,0.8164,0.7732,0.7676,0.6923,0.9491,"Equal-domain development validation"
+08B,post-lock DERM12345 evaluation,0.9255,0.6985,0.7487,0.7683,0.9683,"2321 images / 574 groups; no target-domain adaptation"
