@@ -1,0 +1,6 @@
+metric,PAPEREXP01C_lesion_safe,PAPEREXP04A_conventional_image_level,descriptive_delta_04A_minus_01C,comparison_note
+accuracy,0.8682,0.913491246138002,0.04529124613800206,"Different frozen split protocols; descriptive comparison, not paired."
+macro_f1,0.7333,0.867605362158862,0.13430536215886202,"Different frozen split protocols; descriptive comparison, not paired."
+balanced_accuracy,0.7076,0.8646667352563578,0.15706673525635784,"Different frozen split protocols; descriptive comparison, not paired."
+melanoma_recall,0.7524,0.8055555555555556,0.05315555555555562,"Different frozen split protocols; descriptive comparison, not paired."
+macro_auc,0.9756,0.9876583695539498,0.012058369553949788,"Different frozen split protocols; descriptive comparison, not paired."
