@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Large datasets and model artifacts
+data/
+datasets/
+checkpoints/
+weights/
+models/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Generated experiment outputs
+runs/
+wandb/
+tensorboard/
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
