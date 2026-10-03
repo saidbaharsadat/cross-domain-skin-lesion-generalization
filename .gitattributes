@@ -1,0 +1,4 @@
+# GitHub Linguist configuration
+# The experiment notebooks contain Python code and are treated as Python
+# for repository language statistics.
+*.ipynb linguist-language=Python
