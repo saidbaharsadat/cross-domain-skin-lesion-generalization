@@ -1,15 +1,15 @@
 # Figures
 
-The final manuscript figure files and graphical abstract have been audited as publication artifacts.
+This directory contains the final visual artifacts associated with the manuscript.
 
-Planned public figure set:
+## Files
 
-1. `Figure01` - soft-routed residual adaptation architecture;
-2. `Figure02` - complete experimental/evaluation workflow;
-3. `Figure03` - per-domain 08A development-validation performance;
-4. `Figure04` - post-lock DERM12345 evaluation and router behavior;
-5. graphical abstract.
+- [Figure01.svg](Figure01.svg) - soft-routed residual adaptation architecture.
+- [Figure02.svg](Figure02.svg) - complete experiment and evaluation workflow.
+- [Figure03.svg](Figure03.svg) - per-domain development-validation performance of the locked 08A configuration.
+- [Figure04.svg](Figure04.svg) - post-lock DERM12345 evaluation and router behavior.
+- [Graphical_Abstract.png](Graphical_Abstract.png) - graphical abstract for the study.
 
-The binary PDF files are intentionally not represented by placeholder text files. They will be added through a binary-capable GitHub upload path rather than reconstructed or altered.
+The SVG files are preserved as vector graphics so text, arrows, and diagram elements remain sharp when viewed or reused at different scales.
 
-The JBHI-generated reviewer/submission PDF and signed consent form are **not** publication artifacts for this repository and will not be uploaded.
+The JBHI-generated reviewer/submission PDF, signed author-consent form, submission identifiers, and private journal correspondence are intentionally excluded from this repository.
