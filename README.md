@@ -23,6 +23,17 @@ This study investigates both issues through:
 - routing without dataset identity at inference; and
 - a locked post-development evaluation on a predefined DERM12345 cohort without target-domain adaptation.
 
+## Visual overview
+
+![Graphical abstract](figures/Graphical_Abstract.png)
+
+The final publication figures are available in [figures/](figures/):
+
+- [Figure 1 - Soft-routed residual adaptation architecture](figures/Figure01.svg)
+- [Figure 2 - Experimental and evaluation workflow](figures/Figure02.svg)
+- [Figure 3 - Per-domain 08A development-validation performance](figures/Figure03.svg)
+- [Figure 4 - Post-lock DERM12345 evaluation and router behavior](figures/Figure04.svg)
+
 ## Experiment flow
 
 ```text
