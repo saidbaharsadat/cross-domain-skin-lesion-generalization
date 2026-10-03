@@ -8,7 +8,7 @@
 - [x] Configuration-lock documentation
 - [x] Reported result summary
 - [x] Citation metadata
-- [ ] Software license selection
+- [x] Software license selection (MIT)
 
 ## Phase 2 - Original implementation sources
 
@@ -37,8 +37,8 @@
 - [x] Add verified compact outputs for 06D
 - [x] Add verified compact outputs for 08A
 - [x] Add verified compact outputs for 08B
-- [ ] Add publication figures to GitHub binary storage
-- [ ] Add graphical abstract to GitHub binary storage
+- [x] Add publication figures to GitHub binary storage
+- [x] Add graphical abstract to GitHub binary storage
 - [ ] Decide whether to publish sanitized per-image prediction tables
 - [ ] Decide whether to distribute model checkpoints through a release/LFS/external archive
 
