@@ -302,4 +302,4 @@ The manuscript is under peer review. Results in this repository are retrospectiv
 
 ## License
 
-A software license has not yet been selected. Until a LICENSE file is added, do not assume permission to reuse repository contents beyond rights provided by applicable law.
+The software and code in this repository are released under the [MIT License](LICENSE). Dataset images and third-party source materials remain subject to their original providers' terms and licenses.
